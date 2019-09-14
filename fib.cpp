@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <queue>
 long long mem[10001];
 
 long long fib(long long n){
@@ -11,13 +12,11 @@ long long fib(long long n){
         fn1 = fib(n-1);
         mem[n-1] = fn1;
     }
-
     if (mem[n-2] != 0) fn2 = mem[n-2];
     else {
         fn2 = fib(n-2);
         mem[n-2] = fn2;
     }
-
     return fn1 + fn2;
 }
 
