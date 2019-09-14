@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 long long mem[10001];
 
 long long fib(long long n){
