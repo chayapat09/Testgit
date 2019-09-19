@@ -25,7 +25,7 @@ A = [2442.80 2171.36 ;
      XcYc(i,1) = Xc          ; XcYc(i,2) = Yc;
      
      %Corrected Decentering lens distortion
-     [del_x,del_y,Xc,Yc] = DecenteringDistorsion(-0.0002739 ,-0.0003423 ,x,y);
+     [del_x,del_y,Xc,Yc] = DecenteringDistorsion(-0.0002739 ,-0.0003423 ,Xc,Yc);
      distorsion_2(i,1) = del_x ; distorsion_2(i,2) = del_y;
      XcYc_2(i,1) = Xc          ; XcYc_2(i,2) = Yc;
  end
