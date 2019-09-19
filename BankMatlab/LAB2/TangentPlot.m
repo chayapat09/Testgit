@@ -8,3 +8,4 @@ for i = 1:length(radius)
     out9Pics(i) = TangentDistorsion( 0.000202258     , -5.42169*10^(-5) ,radius(i));
 end
 plot(radius,out3Pics,radius,out5Pics,radius,out9Pics)
+clear radius out3Pics out5Pics out9Pics

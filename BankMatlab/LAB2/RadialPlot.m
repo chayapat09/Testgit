@@ -8,3 +8,4 @@ for i = 1:length(radius)
     out9Pics(i) = RadialDistorsion( 0.0300994 , 0.108463  ,-0.699281 , 0.669147 ,radius(i));
 end
 plot(radius,out3Pics,radius,out5Pics,radius,out9Pics)
+clear radius out3Pics out5Pics out9Pics
